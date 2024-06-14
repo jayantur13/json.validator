@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary Meta Tags -->
-    <title>JSON Validator | JSON Formatter | JSON Lint</title>
+    <title>JSON Validator: Validate, Format, Download</title>
     <meta
       name="description"
-      content="Completely free tool to validate and format your json data.Just copy and paste your data and validate or write and validate,thats all."
+      content="JSON tool completely free for everyone to validate, format and download your json data in json and xml format,copy and paste to begin."
     />
     <meta
       name="keywords"
-      content="json, json formatter, json validator, lint, linter, json lint"
+      content="json, json formatter, json validator, lint, linter, json lint, xml, json download, xml download, formatter"
     />
     <meta name="author" content="Jayant Navrange" />
     <meta name="robots" content="all" />
@@ -25,11 +25,11 @@
     />
     <meta
       property="og:title"
-      content="JSON Validator | JSON Formatter | JSON Lint"
+      content="JSON Validator: Validate, Format, Download"
     />
     <meta
       property="og:description"
-      content="Completely free tool to validate and format your json data.Just copy and paste your data and validate or write and validate,thats all."
+      content="JSON tool completely free for everyone to validate, format and download your json data in json and xml format,copy and paste to begin."
     />
     <meta
       property="og:image"
@@ -44,35 +44,52 @@
     />
     <meta
       property="twitter:title"
-      content="JSON Validator | JSON Formatter | JSON Lint"
+      content="JSON Validator: Validate, Format, Download"
     />
     <meta
       property="twitter:description"
-      content="Completely free tool to validate and format your json data.Just copy and paste your data and validate or write and validate,thats all."
+      content="JSON tool completely free for everyone to validate, format and download your json data in json and xml format,copy and paste to begin."
     />
     <meta
       property="twitter:image"
       content="https://jayantur13.github.io/json.validator/images/json.png"
     />
     <link rel="stylesheet" href="styling/style.css" />
-    <link rel="icon" type="image/x-icon" href="images/fav.png">
+    <link rel="icon" type="image/x-icon" href="images/fav.png" />
   </head>
   <body>
     <div class="container">
       <h2 class="title">JSON Validator</h2>
+      <pre class="title">Data clears in 1 min,to avoid click textarea</pre>
       <textarea
         id="jsonDataArea"
         placeholder="Enter json data here..."
         required
-      >
-      </textarea>
-      <pre id="errorMsg">Watch this space for error!</pre>
+      ></textarea>
+      <pre id="infoArea">Watch this space for information!</pre>
       <div class="btn-controls">
         <button id="submit-btn">Validate</button>
+        <div id="download-btn-dropdown">
+          <button class="download-btn">Download</button>
+          <div class="download-btn-content">
+            <button type="button" id="dl-json-btn">As JSON</button>
+            <button type="button" id="dl-xml-btn">As XML</button>
+          </div>
+        </div>
         <button id="clear-btn">Clear</button>
       </div>
     </div>
     <script src="js/script.js"></script>
-    <footer class="footer">Made by Jayant Navrange</footer>
+    <script src="https://cdn.jsdelivr.net/npm/xml-js@1.6.11/dist/xml-js.min.js"></script>
+    <footer class="footer">
+      <p>
+        This project is
+        <a href="https://github.com/jayantur13/json.validator">open source</a>
+      </p>
+      <p>Made by <a href="https://github.com/jayantur13">Jayant Navrange</a></p>
+      <p>
+        Buy me <a href="https://github.com/sponsors/jayantur13">something</a>
+      </p>
+    </footer>
   </body>
 </html>
